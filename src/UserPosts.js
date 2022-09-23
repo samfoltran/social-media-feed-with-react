@@ -1,5 +1,4 @@
-import PostComments from './PostComments';
-import LikePostButton from './LikePostButton';
+import Post from './Post';
 
 function UserPosts(props){
 
@@ -12,15 +11,7 @@ function UserPosts(props){
             <ul>
                 {
                 posts.map(post => (
-                    <li key={post.title+post.text}>
-                        <h1>{post.title}</h1>
-                        <p>{post.text}</p>
-
-                        <PostComments comments={post.comments} />
-
-                        <p>Likes: {post.likes}</p>
-                        <LikePostButton />
-                    </li>
+                    <Post key={post.title+post.text} post={post} />
                 ))
                 }
             </ul>

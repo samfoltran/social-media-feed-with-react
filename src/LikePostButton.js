@@ -5,6 +5,12 @@ function LikePostButton(props){
     const [liked, setLiked] = useState(false);
 
     const handleClick = () => {
+        if(liked){
+            props.subLike();
+        } else {
+            props.addLike();
+        }
+
         setLiked(!liked);
     }
 
