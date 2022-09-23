@@ -9,7 +9,10 @@ const users = [
                 text: "I'm really happy i can talk to you!",
                 likes: 0,
                 comments: [
-                    {text: "Welcome to the world!"}
+                    {
+                        text: "Welcome to the world!",
+                        likes: 0
+                    }
                 ]
             },
             {
@@ -17,8 +20,14 @@ const users = [
                 text: "I Really want to share to you that pizza is the best food",
                 likes: 0,
                 comments: [
-                    {text: "Really man, it is!"},
-                    {text: "I'm not sure..."}
+                    {
+                        text: "Really man, it is!",
+                        likes: 0
+                    },
+                    {
+                        text: "I'm not sure...",
+                        likes: 0
+                    }
                 ]
             }
         ]

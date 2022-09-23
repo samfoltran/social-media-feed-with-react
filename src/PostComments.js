@@ -1,3 +1,5 @@
+import Comment from './Comment';
+
 function PostComments(props){
 
     const comments = props.comments;
@@ -6,9 +8,7 @@ function PostComments(props){
         <ul>
             {
             comments.map(comment => (
-                <li key={comment.text}>
-                    <p>{comment.text}</p>
-                </li>
+                <Comment key={comment.text} comment={comment} />
             ))
             }
         </ul>
