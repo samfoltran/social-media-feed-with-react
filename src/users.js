@@ -1,6 +1,6 @@
 'use strict';
 
-users = [
+const users = [
     {
         name: 'Samuel',
         posts: [
@@ -24,3 +24,5 @@ users = [
         ]
     }
 ];
+
+export default users;
